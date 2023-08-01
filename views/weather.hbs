@@ -10,12 +10,18 @@
 
 <body>
     {{>navbar}}
-    <div>
-        <p>country name: {{country}}</p>
-        <p>latitude: {{latitude}} </p>
-        <p>longitude: {{longitude}} </p>
-        <p>current weather: {{weather}} and temperature {{temperature}}</p>
-    </div>
+    <h1 class="head"> hi welcome to weather page</h1>
+
+
+    <form id="form">
+        <input type="text" id="address">
+        <button>Search</button>
+    </form>
+    <p id="location"></p>
+    <p id="forecast"></p>
+    <p id="error"></p>
+
+    <script defer src="js/main.js"></script>
 </body>
 
 </html>
